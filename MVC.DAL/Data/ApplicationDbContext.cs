@@ -10,11 +10,12 @@ using System.Threading.Tasks;
 
 namespace MVC.DAL.Data
 {
-    internal class ApplicationDbContext:DbContext
+    public class ApplicationDbContext:DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-       => optionsBuilder.UseSqlServer("Server = . ; Database = MVCApplication ; Itegrated Security = true ; TrustServerCertificate = true");
-
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> option) :base(option)
+        {
+            
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

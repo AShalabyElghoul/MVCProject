@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MVC.DAL.Data;
+
 namespace MVC.PL
 {
     public class Program
@@ -8,6 +11,8 @@ namespace MVC.PL
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<ApplicationDbContext>(option=>
+                option.UseSqlServer("Server = . ; Database = MVCApplication ; Itegrated Security = true ; TrustServerCertificate = true");
 
             var app = builder.Build();
 
