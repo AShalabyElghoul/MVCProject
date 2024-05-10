@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.PL", "MVC.PL.csproj", "{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.DAL", "..\MVC.DAL\MVC.DAL.csproj", "{C434AF32-DA66-4CFB-AA17-FA601ECD0735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.BL", "..\MVC.BL\MVC.BL.csproj", "{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C434AF32-DA66-4CFB-AA17-FA601ECD0735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C434AF32-DA66-4CFB-AA17-FA601ECD0735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C434AF32-DA66-4CFB-AA17-FA601ECD0735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C434AF32-DA66-4CFB-AA17-FA601ECD0735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9580A74-B025-4D57-88AE-403662CFF916}
+	EndGlobalSection
+EndGlobal

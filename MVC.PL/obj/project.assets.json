@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "MVC.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MVC.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MVC.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MVC.BL.dll": {}
+        }
+      },
+      "MVC.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MVC.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MVC.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MVC.BL/1.0.0": {
+      "type": "project",
+      "path": "../MVC.BL/MVC.BL.csproj",
+      "msbuildProject": "../MVC.BL/MVC.BL.csproj"
+    },
+    "MVC.DAL/1.0.0": {
+      "type": "project",
+      "path": "../MVC.DAL/MVC.DAL.csproj",
+      "msbuildProject": "../MVC.DAL/MVC.DAL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "MVC.BL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\MVC.PL.csproj",
+      "projectName": "MVC.PL",
+      "projectPath": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\MVC.PL.csproj",
+      "packagesPath": "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\",
+      "outputPath": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\abdelrahman shalaby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\MVC.BL.csproj": {
+              "projectPath": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\MVC.BL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
