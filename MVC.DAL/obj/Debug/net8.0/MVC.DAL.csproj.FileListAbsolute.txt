@@ -9,3 +9,7 @@ D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\De
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\refint\MVC.DAL.dll
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.pdb
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\ref\MVC.DAL.dll
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\bin\Debug\net8.0\MVC.DAL.runtimeconfig.json
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.csproj.AssemblyReference.cache
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.sourcelink.json
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.genruntimeconfig.cache

@@ -13,3 +13,4 @@ D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.BL\obj\Deb
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.BL\obj\Debug\net8.0\refint\MVC.BL.dll
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.BL\obj\Debug\net8.0\MVC.BL.pdb
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.BL\obj\Debug\net8.0\ref\MVC.BL.dll
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.BL\obj\Debug\net8.0\MVC.BL.sourcelink.json
