@@ -1,0 +1,11 @@
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\bin\Debug\net8.0\MVC.DAL.deps.json
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\bin\Debug\net8.0\MVC.DAL.dll
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\bin\Debug\net8.0\MVC.DAL.pdb
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.AssemblyInfoInputs.cache
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.AssemblyInfo.cs
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.csproj.CoreCompileInputs.cache
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.dll
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\refint\MVC.DAL.dll
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\MVC.DAL.pdb
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.DAL\obj\Debug\net8.0\ref\MVC.DAL.dll

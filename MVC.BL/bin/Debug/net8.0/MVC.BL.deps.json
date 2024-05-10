@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MVC.BL/1.0.0": {
+        "dependencies": {
+          "MVC.DAL": "1.0.0"
+        },
+        "runtime": {
+          "MVC.BL.dll": {}
+        }
+      },
+      "MVC.DAL/1.0.0": {
+        "runtime": {
+          "MVC.DAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MVC.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MVC.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
