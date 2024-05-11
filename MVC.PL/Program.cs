@@ -15,7 +15,7 @@ namespace MVC.PL
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<ApplicationDbContext>(option=>
             {
-                option.UseSqlServer("Server = . ; Database = MVCApplication ; Itegrated Security = True ; TrustServerCertificate = True;")
+                option.UseSqlServer("Server =. ; Database = MVCApplication ; Trusted_Connection = True ; TrustServerCertificate = True;");
             });
 
             var app = builder.Build();
