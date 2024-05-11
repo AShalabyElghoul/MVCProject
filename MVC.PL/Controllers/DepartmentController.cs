@@ -6,16 +6,17 @@ namespace MVC.PL.Controllers
 {
     public class DepartmentController : Controller
     {
-        private readonly DepartmentRepo _departmentsRepo;
+        private readonly IDepartmentRepo _departmentsRepo;
 
-        public DepartmentController(DepartmentRepo repo)
+        public DepartmentController(IDepartmentRepo repo)
         {
             _departmentsRepo = repo;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var department = _departmentsRepo.GetAll();
+            return View(department);
         }
     }
 }

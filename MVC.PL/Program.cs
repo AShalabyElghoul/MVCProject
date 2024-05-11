@@ -1,6 +1,8 @@
  using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualBasic;
+using MVC.BL.Interfaces;
+using MVC.BL.Repos;
 using MVC.DAL.Data;
 
 namespace MVC.PL
@@ -15,8 +17,10 @@ namespace MVC.PL
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<ApplicationDbContext>(option=>
             {
-                option.UseSqlServer("Server =. ; Database = MVCApplication ; Trusted_Connection = True ; TrustServerCertificate = True;");
+                option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            builder.Services.AddScoped<IDepartmentRepo, DepartmentRepo>();
 
             var app = builder.Build();
 
