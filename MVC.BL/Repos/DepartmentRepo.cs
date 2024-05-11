@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MVC.BL.Repos
 {
-    internal class DepartmentRepo : IDepartmentRepo
+    public class DepartmentRepo : IDepartmentRepo
     {
         private readonly ApplicationDbContext _dbContext;
 
