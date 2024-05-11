@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC.BL.Interfaces;
 using MVC.BL.Repos;
+using MVC.DAL.Models;
 
 namespace MVC.PL.Controllers
 {
@@ -16,6 +17,22 @@ namespace MVC.PL.Controllers
         public IActionResult Index()
         {
             var department = _departmentsRepo.GetAll();
+            return View(department);
+        }
+        [HttpGet]
+        public IActionResult Create() {
+            return View();
+        
+        }
+        [HttpPost]
+        public IActionResult Create(Department department)
+        {
+            if (ModelState.IsValid)
+            {
+               var count= _departmentsRepo.Add(department);
+                if(count>0)
+                  return RedirectToAction("Index");
+            }
             return View(department);
         }
     }

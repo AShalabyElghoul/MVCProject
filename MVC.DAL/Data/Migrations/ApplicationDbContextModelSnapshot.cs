@@ -43,7 +43,7 @@ namespace MVC.DAL.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 #pragma warning restore 612, 618
         }
