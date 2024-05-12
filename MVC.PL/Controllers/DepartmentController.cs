@@ -53,8 +53,11 @@ namespace MVC.PL.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Department department) { 
-        if (ModelState.IsValid)
+        public IActionResult Edit([FromRoute]int id , Department department) {
+
+            if (id != department.Id)
+                return BadRequest();
+            if (ModelState.IsValid)
             {
                var count = _departmentsRepo.Update(department);
 
