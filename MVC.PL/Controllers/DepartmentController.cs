@@ -36,7 +36,7 @@ namespace MVC.PL.Controllers
             return View(department);
         }
 
-        public IActionResult Details(int? Id)
+        public IActionResult Details(int? Id , string viewName="Details")
         {
             if(Id is null)
                 return BadRequest();
@@ -44,6 +44,23 @@ namespace MVC.PL.Controllers
             var department = _departmentsRepo.GetById(Id.Value);
             if (department == null)
                 return NotFound();
+            return View(viewName, department);
+        }
+        [HttpGet]
+        public IActionResult Edit(int? Id)
+        {
+           return Details(Id , "Edit");
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Department department) { 
+        if (ModelState.IsValid)
+            {
+               var count = _departmentsRepo.Update(department);
+
+                if (count > 0)
+                    return RedirectToAction("Index");
+            }
             return View(department);
         }
     }
