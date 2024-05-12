@@ -53,6 +53,7 @@ namespace MVC.PL.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Edit([FromRoute]int id , Department department) {
 
             if (id != department.Id)
@@ -66,5 +67,21 @@ namespace MVC.PL.Controllers
             }
             return View(department);
         }
+
+        [HttpGet]
+        public IActionResult Delete (int? Id)
+        {
+            var department = _departmentsRepo.GetById(Id.Value);
+            return View(department);
+        }  
+        
+        [HttpPost]
+        public IActionResult Delete (Department department)
+        {
+            _departmentsRepo.Delete(department);
+            return RedirectToAction("Index" , "Department");
+        }
+
+
     }
 }
