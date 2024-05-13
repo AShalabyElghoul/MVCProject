@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MVC.BL.Repos
 {
-    public class DepartmentRepo : GenericRepo<Department>
+    public class DepartmentRepo :GenericRepo<Department> ,IDepartmentRepo
     {
         public DepartmentRepo(ApplicationDbContext dbContext):base(dbContext)
         {

@@ -21,6 +21,7 @@ namespace MVC.PL
             });
 
             builder.Services.AddScoped<IDepartmentRepo, DepartmentRepo>();
+            builder.Services.AddScoped<IEmployeeRepo, EmployeeRepo>();
 
             var app = builder.Build();
 
