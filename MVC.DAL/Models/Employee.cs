@@ -30,7 +30,7 @@ namespace MVC.DAL.Models
         public string Name { get; set; }
         [DataType(DataType.Currency)]
         public decimal Salary { get; set; }
-        public Gender Gender { get; set; }
+        public Gender? Gender { get; set; }
         [DisplayName("Employee Type")]
         public EmpType EmployeeType { get; set; }
         public bool IsDeleted { get; set; } = false;
@@ -38,8 +38,8 @@ namespace MVC.DAL.Models
         public bool IsActive { get; set; }
         [Range(22,60)]
         public int Age { get; set; }
-        [Phone]
-        public int Phone { get; set; }
+
+        public int? Phone { get; set; }
         [EmailAddress]
         public string? Email { get; set; }
         [RegularExpression(@"^[0-9]{1,3}-[a-zA-Z]{5,10}-[a-zA-Z]{4,10}-[a-zA-Z]{5,10}$"

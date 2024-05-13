@@ -14,7 +14,7 @@ namespace MVC.DAL.Data.Configurations
         public void Configure(EntityTypeBuilder<Employee> builder)
         {
             builder.Property(E => E.Name).HasColumnType("varchar").HasMaxLength(50).IsRequired();
-            builder.Property(E => E.Address).IsRequired();
+            builder.Property(E => E.Address);
             builder.Property(E => E.Salary).HasColumnType("decimal(12,3)");
 
             builder.Property(E => E.Gender)

@@ -17,6 +17,7 @@ namespace MVC.PL.Controllers
            var employee= _employeeRepo.GetAll();
             return View(employee);
         }
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -27,9 +28,9 @@ namespace MVC.PL.Controllers
             if (ModelState.IsValid)
             {
                 _employeeRepo.Add(employee);
-                return View("Index");
+                return RedirectToAction("Index");
             }
-            return BadRequest();
+            return View();
         }
 
     }
