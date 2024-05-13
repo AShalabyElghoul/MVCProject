@@ -17,12 +17,9 @@ namespace MVC.PL.Controllers
            var employee= _employeeRepo.GetAll();
             return View(employee);
         }
-        public IActionResult Create(int? Id)
+        public IActionResult Create()
         {
-            if (Id is null)
-                return NotFound();
-            var employee = _employeeRepo.GetById(Id.Value);
-            return View(employee);
+            return View();
         }
         [HttpPost]
         public IActionResult Create(Employee employee)
