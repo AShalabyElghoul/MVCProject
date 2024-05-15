@@ -33,17 +33,32 @@ namespace MVC.PL.Controllers
             return View();
         }
 
-        public IActionResult Details(int? Id)
+        public IActionResult Details(int? Id,string ActionName="Details")
         {
             if(Id is not null)
             {
                 var employee = _employeeRepo.GetById(Id.Value);
                 if (employee is null)
                     return NotFound();
-                return View(employee);
+                return View(ActionName,employee);
             }
             return BadRequest();
 
+        }
+        public IActionResult Edit(int? Id)
+        {
+            return Details(Id, "Edit");
+        }
+
+        [HttpPost]
+        public IActionResult Edit (Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                _employeeRepo.Update(employee);
+                return RedirectToAction("Index");
+            }
+            return View(employee);
         }
 
     }
