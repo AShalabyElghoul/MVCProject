@@ -61,5 +61,31 @@ namespace MVC.PL.Controllers
             return View(employee);
         }
 
+        public IActionResult Delete(int? Id)
+        {
+            return Details(Id, "Delete");
+        }
+        [HttpPost]
+        public IActionResult Delete (Employee employee)
+        {
+                _employeeRepo.Delete(employee);
+                return RedirectToAction("Index");
+        }
+
+        public IActionResult SoftDelete(int? Id)
+        {
+            return Details(Id, "SoftDelete");
+        }
+
+        [HttpPost]
+        public IActionResult SoftDelete(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                _employeeRepo.Update(employee);
+                return RedirectToAction("Index");
+            }
+            return BadRequest();
+        }
     }
 }

@@ -1,0 +1,37 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "Delete Employee";
+}
+
+<h1>Delete Employee</h1>
+
+<form asp-action="Delete">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Delete Employee : @Model.Name
+    </button>
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete This Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Are You Sure To Delete Employee @Model.Name  ?
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" value="Hard Delete" class="btn btn-danger"  data-dismiss="modal" />
+                    <a asp-action="SoftDelete" class="btn btn-dark" asp-route-Id="@Model.Id">Soft Delete</a>
+                    <a asp-action="Index" class="btn btn-primary">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

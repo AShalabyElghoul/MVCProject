@@ -19,6 +19,7 @@
                 @* <th>@Html.DisplayNameFor(D => D.Gender)</th> *@
                 <th>@Html.DisplayNameFor(D => D.Email)</th>
                 <th>@Html.DisplayNameFor(D => D.IsActive)</th>
+                <th>@Html.DisplayNameFor(D => D.IsDeleted)</th>
                 <th>Details</th>
                 <th>Update</th>
                 <th>Delete</th>
@@ -37,6 +38,7 @@
                     <td>@item.Email</td>
                     @* <td>@item.EmployeeType</td> *@
                     <td>@item.IsActive</td>
+                    <td>@item.IsDeleted</td>
                     <td>
                         <a asp-controller="Employee" asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">
                             <i class="fas fa-eye"></i>  Details
