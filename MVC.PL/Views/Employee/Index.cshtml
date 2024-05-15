@@ -28,7 +28,6 @@
             @foreach (var item in Model)
             {
                 <tr>
-             
                     @* <td>@item.Id</td> *@
                     <td>@item.Name</td>
                     <td>@item.Age</td>
@@ -39,17 +38,17 @@
                     @* <td>@item.EmployeeType</td> *@
                     <td>@item.IsActive</td>
                     <td>
-                        <a asp-controller="Department" asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">
+                        <a asp-controller="Employee" asp-action="Details" asp-route-id="@item.Id" class="btn btn-warning">
                             <i class="fas fa-eye"></i>  Details
                         </a>
                     </td>
                     <td>
-                        <a asp-controller="Department" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">
+                        <a asp-controller="Employee" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">
                             <i class="fas fa-edit"></i> Update
                         </a>
                     </td>
                     <td>
-                        <a asp-controller="Department" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                        <a asp-controller="Employee" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
                             <i class="fas fa-trash"></i> Delete
                         </a>
                     </td>

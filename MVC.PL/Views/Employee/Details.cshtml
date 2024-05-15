@@ -1,0 +1,36 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "Employee Details";
+}
+
+<h1>Employee Details</h1>
+<br />
+<br />
+
+ <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(E=>E.Name)</th>
+            <th>@Html.DisplayNameFor(E=>E.Age)</th>
+            <th>@Html.DisplayNameFor(E=>E.Salary)</th>
+            <th>@Html.DisplayNameFor(E=>E.HiringDate)</th>
+            <th>@Html.DisplayNameFor(E=>E.Email)</th>
+            <th>@Html.DisplayNameFor(E=>E.IsActive)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Name</td>
+            <td>@Model.Age</td>
+            <td>@Model.Salary</td>
+            <td>@Model.HiringDate</td>
+            <td>@Model.Email</td>
+            <td>@Model.IsActive</td>
+        </tr>
+    </tbody>
+
+</table>
+<br />
+<a asp-action="Edit" class="btn btn-primary">Update</a>
+<a asp-action="Index" class="btn btn-light">Back</a>
+
