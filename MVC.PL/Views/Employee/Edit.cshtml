@@ -10,23 +10,23 @@
 <form asp-action="Edit">
     <label asp-for="Name" class="col-form-label"></label>
     <input asp-for="Name" class="form-control"/>
-    <span asp-validation-for="Name"></span>
-
+    <span asp-validation-for="Name" class="text-danger"></span>
+    <br />
     <label asp-for="Age" class="col-form-label"></label>
     <input asp-for="Age" class="form-control" />
-    <span asp-validation-for="Age"></span>
-
+    <span asp-validation-for="Age" class="text-danger"></span>
+    <br />
     <label asp-for="Salary" class="col-form-label"></label>
     <input asp-for="Salary" class="form-control" />
-    <span asp-validation-for="Salary"></span>
-
+    <span asp-validation-for="Salary" class="text-danger"></span>
+    <br />
     <label asp-for="HiringDate" class="col-form-label"></label>
     <input asp-for="HiringDate" type="date" class="form-control" />
-    <span asp-validation-for="HiringDate"></span>
-
+    <span asp-validation-for="HiringDate" class="text-danger"></span>
+    <br />
     <label asp-for="Email" class="col-form-label"></label>
     <input asp-for="Email" class="form-control" />
-    <span asp-validation-for="Email"></span>
+    <span asp-validation-for="Email" class="text-danger"></span>
 
     <br />
     <input type="submit" value="Update" class="btn btn-primary"/> | 

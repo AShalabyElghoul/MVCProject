@@ -11,8 +11,8 @@ namespace MVC.DAL.Models
     public class Department:ModelBase
     {
 
-        public string? Name { get; set; }
-        public string? Code { get; set; }
+        public string Name { get; set; }
+        public int Code { get; set; }
 
         [Display(Name="Date Of Creation")]
         public DateOnly DateOfCreation { get; set; }
