@@ -16,5 +16,6 @@ namespace MVC.DAL.Models
 
         [Display(Name="Date Of Creation")]
         public DateOnly DateOfCreation { get; set; }
+        public ICollection<Employee> Employees { get; set; } = new HashSet<Employee>();
     }
 }

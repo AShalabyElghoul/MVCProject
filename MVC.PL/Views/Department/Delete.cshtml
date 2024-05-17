@@ -6,6 +6,16 @@
 <h1>Delete</h1>
 <br />
 <br />
+
+    <label asp-for="Code" class="col-form-label"></label>
+    <input type="text" asp-for="Code" class="form-control" readonly />
+
+    <label asp-for="Name" class="col-form-label"></label>
+    <input type="text" asp-for="Name" class="form-control" readonly />
+
+    <label asp-for="DateOfCreation" class="col-form-label"></label>
+    <input type="date" asp-for="DateOfCreation" class="form-control" readonly />
+    <br />
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Delete Department : @Model.Name

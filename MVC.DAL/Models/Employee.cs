@@ -48,6 +48,8 @@ namespace MVC.DAL.Models
         [DisplayName("Hiring Date")]
         public DateOnly HiringDate { get; set; }
         public DateTime CreationDate { get; set; } = DateTime.Now;
+        public int? DepartmentId { get; set; }
+        public Department? Department { get; set; }
 
     }
 }
