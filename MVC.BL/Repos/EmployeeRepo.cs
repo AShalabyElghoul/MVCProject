@@ -17,7 +17,12 @@ namespace MVC.BL.Repos
         }
         public IQueryable<Employee> GetEmployeeByAddress(string address)
         {
-            return _dbContext.Employees.Where(E => E.Address.ToLower() == address);
+            return _dbContext.Employees.Where(E => E.Address.ToLower().Contains(address.ToLower()));
+        }
+
+        public IQueryable<Employee> GetByName(string name)
+        {
+            return _dbContext.Employees.Where(E=>E.Name.ToLower().Contains(name.ToLower()));
         }
     }
 }

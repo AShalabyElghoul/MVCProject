@@ -15,9 +15,17 @@ namespace MVC.PL.Controllers
             _DeptRepo = deptRepo;
 
         }
-        public IActionResult Index()
+
+
+        public IActionResult Index(string SearchInp)
         {
-           var employee= _employeeRepo.GetAll();
+            var employee = Enumerable.Empty<Employee>();
+            if (String.IsNullOrEmpty(SearchInp))
+                 employee = _employeeRepo.GetAll();
+
+            else
+                 employee = _employeeRepo.GetByName(SearchInp);
+
             return View(employee);
         }
         [HttpGet]
@@ -51,6 +59,7 @@ namespace MVC.PL.Controllers
         }
         public IActionResult Edit(int? Id)
         {
+            ViewBag.Department = _DeptRepo.GetAll();
             return Details(Id, "Edit");
         }
 

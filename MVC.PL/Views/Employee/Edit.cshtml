@@ -1,6 +1,7 @@
 ﻿@model Employee
 @{
     ViewData["Title"] = "Edit Employee";
+    var department = new SelectList(ViewBag.Department, "Id", "Name");
 }
 
 <h1>Edit Employee</h1>
@@ -27,6 +28,12 @@
     <label asp-for="Email" class="col-form-label"></label>
     <input asp-for="Email" class="form-control" />
     <span asp-validation-for="Email" class="text-danger"></span>
+    <br />
+
+    <label asp-for="DepartmentId" class="col-form-label"></label>
+    <select asp-for="DepartmentId" asp-items="department" class="form-control">
+        <option>----Select Department----</option>
+    </select>
     <br />
     <label asp-for="IsActive" class="col-form-label"></label>
     <input asp-for="IsActive" class="form-check" />

@@ -1,12 +1,22 @@
 ﻿@model IEnumerable<Employee>
 @{
     ViewData["Title"] = "Index";
+    // var dept = ViewBag.Department;
 }
 
 <h1>Employee</h1>
 <br />
 <br />
 <a class="btn btn-primary" asp-action="Create" asp-controller="Employee">Create New Employee</a>
+<br />
+
+<div class="d-flex align-items-center justify-content-center row">
+    <form asp-action="Index" class="mt-5 col-4 d-flex">
+        <input type="text" name="SearchInp" class="form-control col-6"/>
+        <input type="submit" value="Search" class="btn btn-success col-2"/>
+    </form>
+</div>
+
 
 @if (Model.Count() > 0)
 {
@@ -18,6 +28,7 @@
                 <th>@Html.DisplayNameFor(D => D.Salary)</th>
                 @* <th>@Html.DisplayNameFor(D => D.Gender)</th> *@
                 <th>@Html.DisplayNameFor(D => D.Email)</th>
+                <th>Department</th>
                 <th>@Html.DisplayNameFor(D => D.IsActive)</th>
                 <th>@Html.DisplayNameFor(D => D.IsDeleted)</th>
                 <th>Details</th>
@@ -36,6 +47,7 @@
                     @* <td>@item.Gender</td> *@
                     @* <td>@item.Phone</td> *@
                     <td>@item.Email</td>
+                    <td>@item.DepartmentId</td>
                     @* <td>@item.EmployeeType</td> *@
                     <td>@item.IsActive</td>
                     <td>@item.IsDeleted</td>

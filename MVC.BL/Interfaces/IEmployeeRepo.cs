@@ -10,6 +10,7 @@ namespace MVC.BL.Interfaces
     public interface IEmployeeRepo:IGenericRepo<Employee>
     {
         IQueryable<Employee> GetEmployeeByAddress(string address);
+        IQueryable<Employee> GetByName(string Name);
 
     }
 }
