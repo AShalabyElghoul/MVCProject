@@ -30,7 +30,7 @@ namespace MVC.PL.Controllers
                 _employeeRepo.Add(employee);
                 return RedirectToAction("Index");
             }
-            return View();
+            return View(employee);
         }
 
         public IActionResult Details(int? Id,string ActionName="Details")
