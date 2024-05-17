@@ -8,9 +8,12 @@ namespace MVC.PL.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepo _employeeRepo;
-        public EmployeeController(IEmployeeRepo employeeRepo)
+        private readonly IDepartmentRepo _DeptRepo;
+        public EmployeeController(IEmployeeRepo employeeRepo , IDepartmentRepo deptRepo)
         {
-            _employeeRepo=employeeRepo;
+            _employeeRepo = employeeRepo;
+            _DeptRepo = deptRepo;
+
         }
         public IActionResult Index()
         {
@@ -20,6 +23,7 @@ namespace MVC.PL.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            ViewBag.Department = _DeptRepo.GetAll();
             return View();
         }
         [HttpPost]
