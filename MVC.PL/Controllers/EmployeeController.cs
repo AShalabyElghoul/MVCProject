@@ -7,12 +7,10 @@ namespace MVC.PL.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly IEmployeeRepo _employeeRepo;
-        private readonly IDepartmentRepo _DeptRepo;
-        public EmployeeController(IEmployeeRepo employeeRepo , IDepartmentRepo deptRepo)
+        private readonly IUnitOfWork _unitOfWork;
+        public EmployeeController(IUnitOfWork unitOfWork)
         {
-            _employeeRepo = employeeRepo;
-            _DeptRepo = deptRepo;
+            _unitOfWork=unitOfWork;
 
         }
 
@@ -21,17 +19,17 @@ namespace MVC.PL.Controllers
         {
             var employee = Enumerable.Empty<Employee>();
             if (String.IsNullOrEmpty(SearchInp))
-                 employee = _employeeRepo.GetAll();
+                 employee = _unitOfWork.EmployeeRepo.GetAll();
 
             else
-                 employee = _employeeRepo.GetByName(SearchInp);
+                 employee = _unitOfWork.EmployeeRepo.GetByName(SearchInp);
 
             return View(employee);
         }
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.Department = _DeptRepo.GetAll();
+            ViewBag.Department = _unitOfWork.EmployeeRepo.GetAll();
             return View();
         }
         [HttpPost]
@@ -39,7 +37,7 @@ namespace MVC.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-                _employeeRepo.Add(employee);
+                _unitOfWork.EmployeeRepo.Add(employee);
                 return RedirectToAction("Index");
             }
             return View(employee);
@@ -49,7 +47,7 @@ namespace MVC.PL.Controllers
         {
             if(Id is not null)
             {
-                var employee = _employeeRepo.GetById(Id.Value);
+                var employee = _unitOfWork.EmployeeRepo.GetById(Id.Value);
                 if (employee is null)
                     return NotFound();
                 return View(ActionName,employee);
@@ -59,7 +57,7 @@ namespace MVC.PL.Controllers
         }
         public IActionResult Edit(int? Id)
         {
-            ViewBag.Department = _DeptRepo.GetAll();
+            ViewBag.Department = _unitOfWork.EmployeeRepo.GetAll();
             return Details(Id, "Edit");
         }
 
@@ -68,7 +66,7 @@ namespace MVC.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-                _employeeRepo.Update(employee);
+                _unitOfWork.EmployeeRepo.Update(employee);
                 return RedirectToAction("Index");
             }
             return View(employee);
@@ -81,7 +79,7 @@ namespace MVC.PL.Controllers
         [HttpPost]
         public IActionResult Delete (Employee employee)
         {
-                _employeeRepo.Delete(employee);
+                _unitOfWork.EmployeeRepo.Delete(employee);
                 return RedirectToAction("Index");
         }
 
@@ -95,7 +93,7 @@ namespace MVC.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-                _employeeRepo.Update(employee);
+                _unitOfWork.EmployeeRepo.Update(employee);
                 return RedirectToAction("Index");
             }
             return BadRequest();
