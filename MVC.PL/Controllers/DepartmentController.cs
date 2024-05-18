@@ -7,16 +7,16 @@ namespace MVC.PL.Controllers
 {
     public class DepartmentController : Controller
     {
-        private readonly IDepartmentRepo _departmentsRepo;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DepartmentController(IDepartmentRepo repo)
+        public DepartmentController(IUnitOfWork unitOfWork)
         {
-            _departmentsRepo = repo;
+            _unitOfWork=unitOfWork;
         }
 
         public IActionResult Index()
         {
-            var department = _departmentsRepo.GetAll();
+            var department = _unitOfWork.DepartmentRepo.GetAll();
             return View(department);
         }
         [HttpGet]
@@ -29,7 +29,7 @@ namespace MVC.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-               var count= _departmentsRepo.Add(department);
+               var count= _unitOfWork.DepartmentRepo.Add(department);
                 if(count>0)
                   return RedirectToAction("Index");
             }
@@ -41,7 +41,7 @@ namespace MVC.PL.Controllers
             if(Id is null)
                 return BadRequest();
           
-            var department = _departmentsRepo.GetById(Id.Value);
+            var department = _unitOfWork.DepartmentRepo.GetById(Id.Value);
             if (department == null)
                 return NotFound();
             return View(viewName, department);
@@ -60,7 +60,7 @@ namespace MVC.PL.Controllers
                 return BadRequest();
             if (ModelState.IsValid)
             {
-               var count = _departmentsRepo.Update(department);
+               var count = _unitOfWork.DepartmentRepo.Update(department);
 
                 if (count > 0)
                     return RedirectToAction("Index");
@@ -71,14 +71,14 @@ namespace MVC.PL.Controllers
         [HttpGet]
         public IActionResult Delete (int? Id)
         {
-            var department = _departmentsRepo.GetById(Id.Value);
+            var department = _unitOfWork.DepartmentRepo.GetById(Id.Value);
             return View(department);
         }  
         
         [HttpPost]
         public IActionResult Delete (Department department)
         {
-            _departmentsRepo.Delete(department);
+            _unitOfWork.DepartmentRepo.Delete(department);
             return RedirectToAction("Index" , "Department");
         }
 
