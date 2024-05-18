@@ -1,4 +1,4 @@
-﻿@model Employee
+﻿@model CreateEditViewModel
 
 @{
     ViewData["Title"] = "Create Employee";
@@ -33,6 +33,10 @@
     <label asp-for="Email" class="col-form-label"></label>
     <input asp-for="Email" class="form-control" />
     <span asp-validation-for="Email" class="text-danger"></span>
+    <br />
+
+    <label asp-for="image" class="col-form-label"></label>
+    <input asp-for="image" class="form-control" />
     <br />
 
     <label asp-for="DepartmentId" class="col-form-label"></label>

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "76b9r/dsyth51+YTQF4itO5FVXkPWKHxWxworbViWbeNaxe9L/6U2Ix3E5HrnUIlNz948lvJS9kRNL/1FfW1mQ==",
+  "dgSpecHash": "zvQL4AlpLlIqmbmVo3ZqBRGd5SnnHUdiUCYapHrNEU54OnchmdDVFWGxl60KG5iZHLCPdFITBUn+Rnljccop/w==",
   "success": true,
   "projectFilePath": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.DAL\\MVC.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\abdelrahman shalaby\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

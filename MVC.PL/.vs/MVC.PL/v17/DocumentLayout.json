@@ -3,6 +3,32 @@
   "WorkspaceRootPath": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.pl\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|solutionrelative:views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.pl\\viewmodels\\employee\\createeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|solutionrelative:viewmodels\\employee\\createeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.pl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C434AF32-DA66-4CFB-AA17-FA601ECD0735}|..\\MVC.DAL\\MVC.DAL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.dal\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}|..\\MVC.BL\\MVC.BL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.bl\\repos\\genericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.pl\\helpers\\documentsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|solutionrelative:helpers\\documentsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.pl\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,8 +39,10 @@
       "AbsoluteMoniker": "D:0:0:{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}|..\\MVC.BL\\MVC.BL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.bl\\repos\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF12D99C-A0B8-4E4B-9BA6-C099D853D82D}|MVC.PL.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CA98931D-8228-4E6B-9D4E-C25B97C6B97C}|..\\MVC.BL\\MVC.BL.csproj|d:\\iti tasks\\abdonaser\\back end\\new\\08 asp.net core mvc\\myproject\\mvc.bl\\interfaces\\igenericrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.DAL\\Data\\Migrations\\20240518193701_imageName.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,34 +52,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
-              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "Controllers\\DepartmentController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAAFAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:16:32.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAABgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T14:15:39.17Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -62,7 +64,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Views\\Employee\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Create.cshtml",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Views\\Employee\\Create.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-18T20:51:29.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateEditViewModel.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\ViewModels\\Employee\\CreateEditViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Employee\\CreateEditViewModel.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\ViewModels\\Employee\\CreateEditViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Employee\\CreateEditViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:29:21.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenericRepo.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\Repos\\GenericRepo.cs",
+              "RelativeDocumentMoniker": "..\\MVC.BL\\Repos\\GenericRepo.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\Repos\\GenericRepo.cs",
+              "RelativeToolTip": "..\\MVC.BL\\Repos\\GenericRepo.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAEwCsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T19:49:10.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAACkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T17:38:15.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\Repos\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "..\\MVC.BL\\Repos\\UnitOfWork.cs",
@@ -75,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\Interfaces\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "..\\MVC.BL\\Interfaces\\IUnitOfWork.cs",
@@ -84,6 +138,84 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T14:06:35.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.DAL\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\MVC.DAL\\Models\\Employee.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.DAL\\Models\\Employee.cs",
+              "RelativeToolTip": "..\\MVC.DAL\\Models\\Employee.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAADgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T19:34:48.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T14:15:39.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAADwv1MAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T14:16:32.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IGenericRepo.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\Interfaces\\IGenericRepo.cs",
+              "RelativeDocumentMoniker": "..\\MVC.BL\\Interfaces\\IGenericRepo.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.BL\\Interfaces\\IGenericRepo.cs",
+              "RelativeToolTip": "..\\MVC.BL\\Interfaces\\IGenericRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T19:48:31.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DocumentSetting.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Helpers\\DocumentSetting.cs",
+              "RelativeDocumentMoniker": "Helpers\\DocumentSetting.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.PL\\Helpers\\DocumentSetting.cs",
+              "RelativeToolTip": "Helpers\\DocumentSetting.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T18:56:25.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240518193701_imageName.cs",
+              "DocumentMoniker": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.DAL\\Data\\Migrations\\20240518193701_imageName.cs",
+              "RelativeDocumentMoniker": "..\\MVC.DAL\\Data\\Migrations\\20240518193701_imageName.cs",
+              "ToolTip": "D:\\iti tasks\\abdonaser\\Back End\\new\\08 ASP.NET Core MVC\\MyProject\\MVC.DAL\\Data\\Migrations\\20240518193701_imageName.cs",
+              "RelativeToolTip": "..\\MVC.DAL\\Data\\Migrations\\20240518193701_imageName.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T19:37:01.628Z",
               "EditorCaption": ""
             }
           ]

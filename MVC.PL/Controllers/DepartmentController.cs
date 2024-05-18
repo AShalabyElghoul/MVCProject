@@ -29,8 +29,8 @@ namespace MVC.PL.Controllers
         {
             if (ModelState.IsValid)
             {
-               var count= _unitOfWork.DepartmentRepo.Add(department);
-                _unitOfWork.Complete();
+             _unitOfWork.DepartmentRepo.Add(department);
+                var count = _unitOfWork.Complete();
                 if(count>0)
                   return RedirectToAction("Index");
             }
@@ -61,8 +61,8 @@ namespace MVC.PL.Controllers
                 return BadRequest();
             if (ModelState.IsValid)
             {
-               var count = _unitOfWork.DepartmentRepo.Update(department);
-                _unitOfWork.Complete();
+               _unitOfWork.DepartmentRepo.Update(department);
+                var count = _unitOfWork.Complete();
                 if (count > 0)
                     return RedirectToAction("Index");
             }

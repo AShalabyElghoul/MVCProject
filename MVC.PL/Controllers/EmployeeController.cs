@@ -1,16 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using MVC.BL.Interfaces;
 using MVC.BL.Repos;
 using MVC.DAL.Models;
+using MVC.PL.Helpers;
+using MVC.PL.ViewModels.Employee;
 
 namespace MVC.PL.Controllers
 {
     public class EmployeeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        public EmployeeController(IUnitOfWork unitOfWork)
+        private readonly IMapper _mapper;
+        public EmployeeController(IUnitOfWork unitOfWork  ,IMapper mapper)
         {
             _unitOfWork=unitOfWork;
+            _mapper=mapper;
 
         }
 
@@ -30,18 +35,21 @@ namespace MVC.PL.Controllers
         public IActionResult Create()
         {
             ViewBag.Department = _unitOfWork.EmployeeRepo.GetAll();
-            return View();
+            return View(new CreateEditViewModel());
         }
         [HttpPost]
-        public IActionResult Create(Employee employee)
+        public IActionResult Create(CreateEditViewModel employeeVM)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.EmployeeRepo.Add(employee);
-                _unitOfWork.Complete();
-                return RedirectToAction("Index");
+               // DocumentSetting.UploadFile();
+               var mappedEmp = _mapper.Map<Employee>(employeeVM);
+                _unitOfWork.EmployeeRepo.Add(mappedEmp);
+               var Count =  _unitOfWork.Complete();
+                if(Count>0)
+                    return RedirectToAction("Index");
             }
-            return View(employee);
+            return View(employeeVM);
         }
 
         public IActionResult Details(int? Id,string ActionName="Details")
@@ -68,8 +76,9 @@ namespace MVC.PL.Controllers
             if (ModelState.IsValid)
             {
                 _unitOfWork.EmployeeRepo.Update(employee);
-                _unitOfWork.Complete();
-                return RedirectToAction("Index");
+               var count= _unitOfWork.Complete();
+                if(count>0)
+                    return RedirectToAction("Index");
             }
             return View(employee);
         }

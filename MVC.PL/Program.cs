@@ -19,10 +19,11 @@ namespace MVC.PL
             {
                 option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
-
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddAutoMapper(typeof(Program));
             //builder.Services.AddScoped<IDepartmentRepo, DepartmentRepo>();
             //builder.Services.AddScoped<IEmployeeRepo, EmployeeRepo>();
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
             var app = builder.Build();
 
