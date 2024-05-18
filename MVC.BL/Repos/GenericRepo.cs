@@ -18,27 +18,19 @@ namespace MVC.BL.Repos
         {
             _dbContext = dbContext;
         }
-        public int Add(T entity)
+        public void Add(T entity)
         {
             if (entity is not null)
-            {
                 _dbContext.Set<T>().Add(entity);
-                return _dbContext.SaveChanges();
-            }
-            return _dbContext.SaveChanges();
         }
 
-        public int Update(T entity)
-        {
-            _dbContext.Set<T>().Update(entity);
-            return _dbContext.SaveChanges();
-        }
+        public void Update(T entity)
+          =>  _dbContext.Set<T>().Update(entity);
+  
 
-        public int Delete(T entity)
-        {
-            _dbContext.Set<T>().Remove(entity);
-            return _dbContext.SaveChanges();
-        }
+        public void Delete(T entity)
+          =>  _dbContext.Set<T>().Remove(entity);
+
 
         public T GetById(int id)
         {

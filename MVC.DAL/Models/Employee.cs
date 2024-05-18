@@ -49,7 +49,9 @@ namespace MVC.DAL.Models
         public DateOnly HiringDate { get; set; }
         public DateTime CreationDate { get; set; } = DateTime.Now;
         public int? DepartmentId { get; set; }
-        public Department? Department { get; set; }
+        public virtual Department? Department { get; set; }
+
+        public string? ImgName { get; set; }
 
     }
 }

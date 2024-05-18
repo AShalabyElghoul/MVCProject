@@ -38,6 +38,7 @@ namespace MVC.PL.Controllers
             if (ModelState.IsValid)
             {
                 _unitOfWork.EmployeeRepo.Add(employee);
+                _unitOfWork.Complete();
                 return RedirectToAction("Index");
             }
             return View(employee);
@@ -67,6 +68,7 @@ namespace MVC.PL.Controllers
             if (ModelState.IsValid)
             {
                 _unitOfWork.EmployeeRepo.Update(employee);
+                _unitOfWork.Complete();
                 return RedirectToAction("Index");
             }
             return View(employee);
@@ -80,7 +82,8 @@ namespace MVC.PL.Controllers
         public IActionResult Delete (Employee employee)
         {
                 _unitOfWork.EmployeeRepo.Delete(employee);
-                return RedirectToAction("Index");
+                _unitOfWork.Complete();
+            return RedirectToAction("Index");
         }
 
         public IActionResult SoftDelete(int? Id)
@@ -94,6 +97,7 @@ namespace MVC.PL.Controllers
             if (ModelState.IsValid)
             {
                 _unitOfWork.EmployeeRepo.Update(employee);
+                _unitOfWork.Complete();
                 return RedirectToAction("Index");
             }
             return BadRequest();

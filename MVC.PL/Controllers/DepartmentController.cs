@@ -30,6 +30,7 @@ namespace MVC.PL.Controllers
             if (ModelState.IsValid)
             {
                var count= _unitOfWork.DepartmentRepo.Add(department);
+                _unitOfWork.Complete();
                 if(count>0)
                   return RedirectToAction("Index");
             }
@@ -61,7 +62,7 @@ namespace MVC.PL.Controllers
             if (ModelState.IsValid)
             {
                var count = _unitOfWork.DepartmentRepo.Update(department);
-
+                _unitOfWork.Complete();
                 if (count > 0)
                     return RedirectToAction("Index");
             }
@@ -72,6 +73,7 @@ namespace MVC.PL.Controllers
         public IActionResult Delete (int? Id)
         {
             var department = _unitOfWork.DepartmentRepo.GetById(Id.Value);
+          
             return View(department);
         }  
         
@@ -79,6 +81,7 @@ namespace MVC.PL.Controllers
         public IActionResult Delete (Department department)
         {
             _unitOfWork.DepartmentRepo.Delete(department);
+            _unitOfWork.Complete();
             return RedirectToAction("Index" , "Department");
         }
 
