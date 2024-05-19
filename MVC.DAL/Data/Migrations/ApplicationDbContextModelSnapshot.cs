@@ -77,9 +77,6 @@ namespace MVC.DAL.Data.Migrations
                     b.Property<DateOnly>("HiringDate")
                         .HasColumnType("date");
 
-                    b.Property<string>("ImgName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -96,6 +93,9 @@ namespace MVC.DAL.Data.Migrations
 
                     b.Property<decimal>("Salary")
                         .HasColumnType("decimal(12,3)");
+
+                    b.Property<string>("imageName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

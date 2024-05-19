@@ -255,3 +255,4 @@ D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.PL\bin\Deb
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\iti tasks\abdonaser\Back End\new\08 ASP.NET Core MVC\MyProject\MVC.PL\bin\Debug\net8.0\AutoMapper.dll

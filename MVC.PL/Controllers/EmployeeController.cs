@@ -34,16 +34,40 @@ namespace MVC.PL.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            ViewBag.Department = _unitOfWork.EmployeeRepo.GetAll();
-            return View(new CreateEditViewModel());
+            ViewBag.Department = _unitOfWork.DepartmentRepo.GetAll();
+            return View();
         }
         [HttpPost]
         public IActionResult Create(CreateEditViewModel employeeVM)
         {
             if (ModelState.IsValid)
             {
-               // DocumentSetting.UploadFile();
-               var mappedEmp = _mapper.Map<Employee>(employeeVM);
+                // DocumentSetting.UploadFile();
+                Employee mappedEmp = new Employee
+                {
+         
+                    Address = employeeVM.Address,
+                    CreationDate = employeeVM.CreationDate,
+                    Age = employeeVM.Age,
+                    DepartmentId = employeeVM.DepartmentId,
+                    Email = employeeVM.Email,
+                    EmployeeType = employeeVM.EmployeeType,
+                    Salary = employeeVM.Salary,
+                    Name = employeeVM.Name,
+                    Gender = employeeVM.Gender,
+                    IsActive = employeeVM.IsActive,
+                    Phone = employeeVM.Phone,
+                    HiringDate = employeeVM.HiringDate,
+                    Department = new Department { Name = "Marketing"}
+                    //{
+                    //    Name = employeeVM.Department.Name,
+                    //    Code = employeeVM.Department.Code,
+                    //    DateOfCreation = employeeVM.Department.DateOfCreation,
+                    //    Employees = new HashSet<Employee>()
+                    //}
+                };
+                //here 
+               mappedEmp.imageName = DocumentSetting.UploadFile(employeeVM.image,"Imgs"); 
                 _unitOfWork.EmployeeRepo.Add(mappedEmp);
                var Count =  _unitOfWork.Complete();
                 if(Count>0)

@@ -5,13 +5,13 @@
 namespace MVC.DAL.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class imageName : Migration
+    public partial class EmpImg : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "ImgName",
+                name: "imageName",
                 table: "Employees",
                 type: "nvarchar(max)",
                 nullable: true);
@@ -21,7 +21,7 @@ namespace MVC.DAL.Data.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "ImgName",
+                name: "imageName",
                 table: "Employees");
         }
     }

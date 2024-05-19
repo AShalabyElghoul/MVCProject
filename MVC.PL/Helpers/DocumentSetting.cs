@@ -11,7 +11,7 @@
             {
                 Directory.CreateDirectory(FolderPath);
             }
-            string FileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+            var FileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
 
             string FilePath = Path.Combine(FolderPath, FileName);
 

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC.DAL.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240518193701_imageName")]
-    partial class imageName
+    [Migration("20240519151524_EmpImg")]
+    partial class EmpImg
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,9 +80,6 @@ namespace MVC.DAL.Data.Migrations
                     b.Property<DateOnly>("HiringDate")
                         .HasColumnType("date");
 
-                    b.Property<string>("ImgName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -99,6 +96,9 @@ namespace MVC.DAL.Data.Migrations
 
                     b.Property<decimal>("Salary")
                         .HasColumnType("decimal(12,3)");
+
+                    b.Property<string>("imageName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
